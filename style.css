@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar section start */
+.navbar{
+    box-shadow: 0 15px 40px -20px rgb(40 44 63 / 15%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: #fff;
+    z-index: 1000;
+    padding: 0 20px;
+}
+
+.navbar .nav{
+    max-width: 1200px;
+    min-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav .left{
+    display: flex;
+    align-items: center;
+}
+
+.nav .left .logo{
+    display: block;
+    height: 49px;
+    margin-right: 16px;
+    transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.left .logo:hover{
+    transform: scale(1.1);
+}
+
+.navbar .location-div{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-left: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-bottom: -1px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.location-div .other{
+    font-weight: 700;
+    color: #3d4152;
+    float: left;
+    padding-bottom: 2px;
+    border-bottom: 2px solid;
+}
+
+.location-div .other:hover{
+    color: #fc8019;
+    border-bottom: 2px solid #fc8019;
+}
+
+.location-div .location{
+    display: block;
+    font-weight: 300;
+    padding-left: 5px;
+    margin-left: 5px;
+    color: #686b78;
+}
+
+.location-div .arrow-down{
+    position: absolute;
+    top: 50%;
+    right: -6%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: #fc8019;
+    font-weight: 700;
+}
+
+.right .items{
+    display: flex;
+    align-items: center;
+}
+
+.right .items li{
+    list-style-type: none;
+    margin-right: 36px;
+    color: #3d4152;
+    font-size: 16px;
+    font-weight: 500;  
+}
+
+.items .nav-item{
+    display: flex;
+    align-items: center;
+    /* padding-left: 28px; */
+    position: relative;
+    height: 80px;
+    cursor: pointer;
+}
+
+.items .nav-item a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #3d4152;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.items .nav-item a:hover{
+    color: #fc8019;
+}
+
+.nav-item a span{
+    padding-left: 11px;
+}
+
+/* Navbar section End */
+
+/* content section start */
+
+.global-content .best-offers{
+    width: 70%;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 42px;
+    top: 70px;
+}
+
+.panel{
+    font-size: 24px;
+    font-weight:600;
+    display: flex;
+    justify-content: space-between;
+}
+
+.panel div button{
+    cursor: pointer;
+    border: 2px solid #f4f4f4;
+    width: 36px;
+    height: 36px;
+    border-radius: 25px;
+}
+
+.offers-images{
+    cursor: pointer;
+    display: flex;
+    padding-top: 10px;
+    gap: 15px;
+}
+
+.best-offers .offers-images img{
+    width: 425px;
+    height: 252px;
+}
+
+.global-content .whats-on-your-mind{
+    width: 70%;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 40px;
+    top: 70px;
+}
+
+.dishes{
+    cursor: pointer;
+    display: flex;
+    gap: 18px;
+    height: 180px;
+    width: 144px;
+}
+
+hr{
+    position: relative;
+    top: 100px;
+    border: 1px solid rgb(240, 240, 245);
+    margin: 32px calc(10% + 52px);
+}
+
+.top-restaurants{
+    width: 70%;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 40px;
+    top: 70px;
+}
+
+.restaurants-list .restaurants{
+    margin-top: 15px;
+    padding-right: 32px;
+    display: grid;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.restaurants-list .restaurants .img{
+    width: 273px;
+    height: 182px;
+}
+
+.restaurants img{
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ratings-and-timing{
+    display: flex;
+}
+
+.restaurants-list{
+    display: flex;
+}
+
+.restaurants-with-ofd{
+    width: 70%;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 40px;
+    top: 70px;
+}
+
+.restaurants-list2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin: 32px 16px;
+}
+
+.restaurants-list2 .restaurants{
+    display: grid;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.restaurants-list2 .restaurants .img{
+    height: 146px;
+}
+
+.restaurant-name, .ratings-and-timing{
+    font-weight: 550;
+}
+
+/* footer section */
+
+.footer{
+    margin-top: 150px;
+    padding-top: 50px;
+    height: 100%;
+    background-color: rgb(2, 6, 12);
+}
+
+.final-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5%;
+    padding: 0px 17.5% 7rem;
+}
+
+li, .copyright{
+    cursor: pointer;
+    padding-top: 10px;
+    list-style-type: none;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.swiggy-panel{
+    display: flex;
+}
+
+.swiggy-panel div{
+    font-size: 22px;
+    font-weight: 600;
+    padding: 4px;
+}
+
+.section-4{
+    margin-top: 25px;
+}
+
+.color{
+    cursor: auto;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+}
